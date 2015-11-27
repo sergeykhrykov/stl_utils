@@ -104,12 +104,16 @@ int main (int argc, char *argv[]) {
 	vector<point_and_index> points_sorted(points.begin(), points.end());
 	sort(points_sorted.begin(), points_sorted.end(), compare);
 
+	vector<Point> p{};
+
 	const int num_points = points.size();
 	const int num_triangles = triangles.size();
 
-	// Calculate volume
+	// Calculate model volume
 
-
+	for (auto t : triangles) {
+		
+	}
 
 
     return EXIT_SUCCESS;
